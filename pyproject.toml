@@ -32,10 +32,11 @@ dependencies = [
 tests = [
   "pytest",
   "pytest-asyncio",
+  "pytest-django",
   "sybil>=6",
   "typing-extensions; python_version<'3.9'",
 ]
-typing = ["mypy>=1.4", "fastapi", "flask", "starlette", "aiohttp", "pyramid"]
+typing = ["mypy>=1.4", "fastapi", "flask", "starlette", "aiohttp", "pyramid", "Django"]
 docs = [
   "sphinx>=7.2.2",
   "sphinx-design",
@@ -53,6 +54,7 @@ docs = [
   "pyramid",
   "starlette",
   "sqlalchemy",
+  "Django",
 ]
 dev = ["svcs[tests,typing]", "tox>4", "httpx"]
 

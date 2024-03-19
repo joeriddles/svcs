@@ -45,3 +45,8 @@ try:
     from . import starlette
 except ImportError:
     __all__ += ["starlette"]
+
+try:
+    from . import django
+except ImportError:
+    __all__ += ["django"]
